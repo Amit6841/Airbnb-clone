@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Airbnb</title>
+</head>
+
+<body class="capitalize">
+    <div
+        class="w-full h-[80px] fixed grid grid-cols-3 z-[99] bg-white flex items-center capitalize px-20 border-b-[2px] border-gray-100">
+        <img src="/public/airbnb-logo.png" alt="" class="h-18 cursor-pointer" href="/index.html">
+        <div class="w-[370px] flex p-2 rounded-full border-[2px] border-gray-300 items-center gap-5">
+            <p class="px-2 border-r-[2px] border-gray-300 cursor-pointer">anywhere</p>
+            <p class="px-2 border-r-[2px] border-gray-300 cursor-pointer">any week</p>
+            <p class="text-gray-500 cursor-pointer">add guest</p>
+            <i class="fa-solid fa-magnifying-glass p-2 bg-red-500 rounded-full text-white cursor-pointer"></i>
+        </div>
+        <div class="flex items-center justify-end gap-4 ">
+            <p class="font-semibold hover:bg-gray-100 p-3 rounded-full cursor-pointer">airbnb your home</p>
+            <i class="fa-solid fa-globe hover:bg-gray-100 p-3 rounded-full cursor-pointer"></i>
+            <span class="border-[2px] border-gray-300 rounded-full p-3">
+                <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+                <i class="fa-solid fa-circle-user ml-2 text-2xl text-gray-500 cursor-pointer"></i>
+            </span>
+        </div>
+    </div>
+    <div
+        class="w-full h-[80px] fixed bg-white flex items-center justify-between capitalize mt-[80px] px-20 border-b-[2px] border-gray-100 z-[99]">
+        <div class="flex h-[80px] py-4 gap-9 text-gray-500 ">
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type1.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">beachfront</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type2.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">icons</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type3.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">lakes</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type4.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">islands</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer ">
+                <img src="/public/types/type5.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">caves</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type6.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">surfing</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type7.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">rooms</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type8.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">amazing views</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type9.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">trulli</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type10.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">amazing pool</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type11.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">mansion</p>
+            </span>
+            <span class="flex flex-col items-center justify-center hover:text-gray-900 cursor-pointer">
+                <img src="/public/types/type12.jpeg" alt="" class="w-[30px]">
+                <p class="text-sm pt-1">farms</p>
+            </span>
+        </div>
+        <div
+            class=" h-[45px] w-[100px] gap-2 flex flex-row items-center justify-center border-[2px] border-gray-400 rounded-lg hover:border-gray-900 cursor-pointer hover:bg-gray-100">
+            <i class="fa-solid fa-sliders text-xl"></i>
+            <p >filter</p>
+        </div>
+        <div
+            class="flex items-center justify-between px-3 h-[45px] w-[250px] border-[2px] border-gray-400 rounded-lg text-sm hover:border-gray-900 cursor-pointer hover:bg-gray-100">
+            <p>display total before taxes</p>
+            <i class="fa-solid fa-toggle-on text-3xl"></i>
+        </div>
+    </div>
+    <div class="w-full px-20 flex flex-wrap gap-5 absolute mt-[180px] m-auto items-center justify-center">
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img1.webp" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img2.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img3.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img4.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>3.01</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 9 nights 28 May – 2 jun</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img4.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>3.01</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 9 nights 28 May – 2 jun</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img3.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img2.jpg" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+        <div class="w-[320px] h-[450px] rounded-3xl cursor-pointer">
+            <div class="w-full h-[300px]">
+                <img src="/public/hotels/img1.webp" alt="" class="h-full w-ful rounded-3xl">
+            </div>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <p>majorda,india</p>
+                    <p>4.81</p>
+                </div>
+                <p class="text-gray-500">Arossim Beach </p>
+                <p class="text-gray-500"> 5 nights 28 Mar – 2 Apr</p>
+                <p class="text-gray-900 pt-1"> ₹23,052 total before taxes</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
